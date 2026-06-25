@@ -6,21 +6,32 @@ namespace Desafio21DiasPoo
     {
         static void Main(string[] args)
         {
-            Pessoa gabriel = new Pessoa();
-            gabriel.Id = 1;
-            gabriel.Nome = "Gabriel";
-            gabriel.Endereco = "BRASIL SP";
+            //RECEITA de BOLO
+            Receita boloDeChocolate = new Receita();
+            boloDeChocolate.Nome = "BOLO DE CHOCOLATE";
+            boloDeChocolate.Descricao = "Bolo pequeno de chocolate";
+            boloDeChocolate.Tamanho = "P";
+            boloDeChocolate.Peso = 0.25f;
+            boloDeChocolate.Preco = 8.99f;
 
-            Pessoa mariaJulia = new Pessoa();
-            mariaJulia.Id = 2;
-            mariaJulia.Nome = "Maria Julia";
-            mariaJulia.Endereco = "BRASIL SP";
-            Console.WriteLine("Hello World!");
+            Receita temaki = new Receita();
+            temaki.Nome = "TEMAKI FRITO";
+            temaki.Descricao = "temaki frito com cream";
+            temaki.Tamanho = "M";
+            temaki.Peso = 0.5f;
+            temaki.Preco = 29.99f;
 
-            Pessoa sofia = new Pessoa();
-            sofia.Id = 3;
-            sofia.Nome = "Sofia";
-            sofia.Endereco = "BRASIL SP";
+
+            Receita frangoFrito = new Receita();
+            frangoFrito.Nome = "FRANGO FRITO";
+            frangoFrito.Descricao = "frango frito com acompanhamento de batata";
+            frangoFrito.Tamanho = "G";
+            frangoFrito.Peso = 0.25f;
+            frangoFrito.Preco = 8.99f;
+
+            Console.WriteLine(boloDeChocolate.ToString());
+            Console.WriteLine(temaki.ToString());
+            Console.WriteLine(frangoFrito.ToString());
         }
     }
 }
